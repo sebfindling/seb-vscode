@@ -7,7 +7,7 @@ export function activate(context: vscode.ExtensionContext) {
   // Create GitHub status bar item
   const githubStatusBarItem = vscode.window.createStatusBarItem(
     vscode.StatusBarAlignment.Right,
-    1000
+    9000
   );
   githubStatusBarItem.command = 'github-link.openRepository';
   githubStatusBarItem.text = "$(github)";
@@ -16,7 +16,7 @@ export function activate(context: vscode.ExtensionContext) {
   // Create Deployment status bar item
   const deploymentStatusBarItem = vscode.window.createStatusBarItem(
     vscode.StatusBarAlignment.Right,
-    1001
+    9001
   );
   deploymentStatusBarItem.command = 'github-link.openDeployment';
   deploymentStatusBarItem.text = "$(cloud)";
