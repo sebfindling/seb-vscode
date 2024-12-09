@@ -23,3 +23,4 @@ npx @vscode/vsce package
 
 
 #### Resultado
+<img width="164" alt="image" src="https://github.com/user-attachments/assets/19a3007e-df78-4a1d-b164-5dd94dd4b045">
