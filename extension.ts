@@ -32,7 +32,7 @@ export function activate(context: vscode.ExtensionContext) {
     if (!packageJson) return;
 
     if (!packageJson.repository) {
-      vscode.window.showErrorMessage('No repository field found in package.json');
+      vscode.window.showErrorMessage('Falta la entrada "repository" en el package.json');
       return;
     }
 
@@ -45,7 +45,7 @@ export function activate(context: vscode.ExtensionContext) {
     }
 
     if (!repoUrl) {
-      vscode.window.showErrorMessage('Invalid repository URL in package.json');
+      vscode.window.showErrorMessage('La entrada "repository" del package.json es inválida');
       return;
     }
 
@@ -64,14 +64,14 @@ export function activate(context: vscode.ExtensionContext) {
     if (!packageJson) return;
 
     if (!packageJson.deployment_url) {
-      vscode.window.showErrorMessage('No deployment_url field found in package.json');
+      vscode.window.showErrorMessage('Falta la entrada "deployment_url" en el package.json');
       return;
     }
 
     const deployUrl = packageJson.deployment_url;
 
     if (typeof deployUrl !== 'string') {
-      vscode.window.showErrorMessage('Invalid deployment URL in package.json');
+      vscode.window.showErrorMessage('La entrada "deployment_url" del package.json es inválida');
       return;
     }
 
@@ -83,7 +83,7 @@ export function activate(context: vscode.ExtensionContext) {
     const workspaceFolders = vscode.workspace.workspaceFolders;
 
     if (!workspaceFolders) {
-      vscode.window.showErrorMessage('No workspace folder found');
+      vscode.window.showErrorMessage('No estás en un espacio de trabajo');
       return null;
     }
 
@@ -93,7 +93,7 @@ export function activate(context: vscode.ExtensionContext) {
       const packageJsonContent = fs.readFileSync(packageJsonPath, 'utf8');
       return JSON.parse(packageJsonContent);
     } catch (error) {
-      vscode.window.showErrorMessage('Error reading package.json');
+      vscode.window.showErrorMessage('Error leyendo el package.json');
       return null;
     }
   }

@@ -5,11 +5,18 @@ Agrega iconos en la barra de estado para acceder rapidamente al repositorio GitH
 configurables en el `package.json` del proyecto activo.
 
 ### Instalación
-1. Crear paquete VSIX
+1. Compilar TS
+```
+npm i
+npm run compile
+```
+
+2. Crear paquete VSIX
 ```
 npx @vscode/vsce package
 ```
-2. Presionar `Ctrl+Shift+P` en VScode y buscar `Install from VSIX`.
+
+3. Presionar `Ctrl+Shift+P` en VScode y buscar `Install from VSIX`.
 
 ### Ejemplo de **package.json** en un proyecto:
 ```

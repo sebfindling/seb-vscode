@@ -2,6 +2,7 @@
   "name": "seb-vscode",
   "displayName": "Seb VSCode",
   "description": "Cositas de Seb",
+  "repository": "https://github.com/voltuer/seb-vscode",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.80.0"
@@ -34,6 +35,5 @@
     "@typescript-eslint/parser": "^5.42.0",
     "eslint": "^8.26.0",
     "typescript": "^4.8.4"
-  },
-  "repository": "https://github.com/voltuer"
+  }
 }
