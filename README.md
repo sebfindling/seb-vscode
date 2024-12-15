@@ -33,7 +33,8 @@ npx @vscode/vsce package
 <img width="300" alt="image" src="https://github.com/user-attachments/assets/19a3007e-df78-4a1d-b164-5dd94dd4b045">
 
 # Extra ✨
-Funciones bash/zsh para ver los links del repositorio y deployment
+Funciones bash/zsh para ver los links del repositorio y deployment<br>
+Requieren `sudo apt install jq`
 ```
 function url_r { link=$(jq -r '.repository // empty' package.json) 2&>/dev/null; [ $link ] && echo "  $link" }
 function url_d { link=$(jq -r '.deployment_url // empty' package.json) 2&>/dev/null; [ $link ] && echo "  $link" }
