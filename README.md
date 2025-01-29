@@ -1,8 +1,11 @@
 # Seb VSCode
-### Herramientas de VSCode mias y solo mias
+### Mis herramientas personales de VSCode
 
 Agrega iconos en la barra de estado para acceder rapidamente al repositorio GitHub y a la pagina de deploy,
 configurables en el `package.json` del proyecto activo.
+
+#### Resultado
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/19a3007e-df78-4a1d-b164-5dd94dd4b045">
 
 ### Instalación
 1. Compilar TS
@@ -27,10 +30,6 @@ npx -y @vscode/vsce package
 }
 ```
 
-
-
-#### Resultado
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/19a3007e-df78-4a1d-b164-5dd94dd4b045">
 
 # Extra ✨
 Funciones bash/zsh para ver los links del repositorio y deployment<br>
