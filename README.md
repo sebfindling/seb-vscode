@@ -7,7 +7,10 @@ configurables en el `package.json` del proyecto activo.
 #### Resultado
 <img width="300" alt="image" src="https://github.com/user-attachments/assets/19a3007e-df78-4a1d-b164-5dd94dd4b045">
 
-### Instalación
+## Descargar
+[Descargar la versión más reciente de la página de Releases](https://github.com/sebfindling/seb-vscode/releases)
+
+## Alternativa: Compilar e instalar desde código fuente
 1. Compilar TS
 ```
 npm i
