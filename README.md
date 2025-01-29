@@ -13,7 +13,7 @@ npm run compile
 
 2. Crear paquete VSIX
 ```
-npx @vscode/vsce package
+npx -y @vscode/vsce package
 ```
 
 3. Presionar `Ctrl+Shift+P` en VScode y buscar `Install from VSIX`.
